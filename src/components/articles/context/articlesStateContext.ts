@@ -13,7 +13,7 @@ const ArticlesContext = createContext<ArticlesContextValue | undefined>(undefine
 export const useArticlesContext = () => {
     const context = useContext(ArticlesContext);
     if (!context) {
-        throw new Error('useArticlesContext must be used within a GameProvider');
+        throw new Error('useArticlesContext must be used within a ArticlesProvider');
     }
     return context;
 };

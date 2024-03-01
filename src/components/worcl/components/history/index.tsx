@@ -57,6 +57,7 @@ const History = () => {
                                     <div className="w-fit mx-auto px-2 my-1 flex flex-row flex-nowrap gap-2" >
                                         {pastWord.answer.map((_, letterIndex: number) => (
                                             <LetterTile
+                                                key={index}
                                                 answer={pastWord.answer}
                                                 index={letterIndex}
                                             />
@@ -68,6 +69,7 @@ const History = () => {
                                         {pastWord.guesses.length >  0 ?
                                             pastWord.answer.map((_, letterIndex: number) => (
                                                 <LetterTile
+                                                    key={letterIndex}
                                                     answer={pastWord.answer}
                                                     index={letterIndex}
                                                     guess={pastWord.guesses[pastWord.guesses.length - 1]}

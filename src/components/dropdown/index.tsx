@@ -47,11 +47,12 @@ const Dropdown = ({
             {options?.map((option, index) => {
                 if (optionTemplate) {
                     return (
-                        optionTemplate(option)
+                        <div key={typeof option ==='string'? option : option?.name} >{optionTemplate(option)}</div>
                     )
                 } else {
                     return (
                         <BasicOptionTemplate
+                            key={typeof option ==='string'? option : option?.name}
                             option={option}
                         />
                     )

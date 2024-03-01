@@ -1,6 +1,6 @@
 import { ArticlesContextProvider } from "@/components/articles/context/articlesStateProvider";
 import Layout from "@/layout/main";
-import MyWorkDataProvider from "../data/provider";
+import MyWorkDataProvider from "@/data/myWork/provider";
 import { useRouter } from "next/router";
 import ArticlesContainer from "@/components/articles/container";
 import { Article, ArticlePreview } from "@/components/articles/types/types";
@@ -35,8 +35,8 @@ export async function getServerSideProps({ params }: any) {
     const slug = params.slug;
 
     // Fetch article data here based on the slug
-    const articlePreviews = (await import('../data/myWorkPreviews.json')).default;
-    const articleContent = (await import(`../data/articles/${slug}.json`)).default;
+    const articlePreviews = (await import('@/data/myWork/myWorkPreviews.json')).default;
+    const articleContent = (await import(`@/data/myWork/articles/${slug}.json`)).default;
 
     return {
         props: {

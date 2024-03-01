@@ -156,9 +156,9 @@ const Wordle = () => {
                         :
                         <>
                             {gameResultsState.isGameWon ?
-                                <p>Wowzers, great job! The word <u>was</u> "{answerString.toLowerCase()}".</p>
+                                <p>Wowzers, great job! The word <u>was</u> &quot;{answerString.toLowerCase()}&quot;.</p>
                                 :
-                                <p>Great try! The word was "{answerString.toLowerCase()}".</p>
+                                <p>Great try! The word was &quot;{answerString.toLowerCase()}&quot;.</p>
                             }
                             {answerDefinitions && <AnswerDefinitions answerDefinitions={answerDefinitions} />}
                         </>

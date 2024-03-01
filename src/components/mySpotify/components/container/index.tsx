@@ -29,7 +29,7 @@ const MyTopSpotifyContainer = () => {
     return (
         <section className="relative w-fit mx-auto flex flex-col flex-wrap gap-8 text-[#76d962]" >
             <span className="flex flex-nowrap gap-2 justify-between" >
-                <h2 className="text-xl sm:text-2xl lg:text-3xl" >What I've been listening to:</h2>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl" >What I&apos;ve been listening to:</h2>
                 <Image src={"/spotify-icon.png"} alt={"My listening data courtesy of Spotify"} width={40} height={40} />
             </span>
             <div 

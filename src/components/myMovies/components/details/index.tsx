@@ -1,4 +1,4 @@
-import formatReleaseDate from "@/pages/games/cinemoji/helpers/formatReleaseDate";
+import formatReleaseDate from "@/components/cinemoji/helpers/formatReleaseDate";
 import { useMyMoviesContext } from "../../context/myMoviesStateContext";
 import Score from "../score";
 

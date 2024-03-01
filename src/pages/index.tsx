@@ -1,8 +1,8 @@
 import AboutMe from "@/components/aboutMe";
 import TypewriterHero from "@/components/hero/typewriterHero";
-import GamesContainer from "./games/components/container";
-import { CinemjoiContextProvider } from "./games/cinemoji/context/cinemojiStateProvider";
-import GameStateProvider from "./games/worcl/context/gameStateProvider";
+import GamesContainer from "../components/games/components/container";
+import { CinemjoiContextProvider } from "../components/cinemoji/context/cinemojiStateProvider";
+import GameStateProvider from "../components/worcl/context/gameStateProvider";
 import Tag from "@/components/tag";
 import { FaCode, FaFileCode, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
@@ -84,7 +84,7 @@ const Page = () => {
                                 aboutMeText={aboutMeText}
                             />
                         ))}
-                        <p className="flex flex-nowrap gap-2" >Click these to check out the actual code for what you're looking at <FaCode className="text-orange-400 my-auto" /></p>
+                        <p className="flex flex-nowrap gap-2" >Click these to check out the actual code for what you&apos;re looking at <FaCode className="text-orange-400 my-auto" /></p>
                         <small>Want to get straight into things with some of my projects? Check out my latest project and the thought process behind it <Link href="/my-work/hello-async" className="text-teal-600 underline" >here</Link>.</small>
                     </section>
                     <CinemjoiContextProvider>

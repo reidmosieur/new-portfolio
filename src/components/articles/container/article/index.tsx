@@ -37,7 +37,7 @@ const ArticleContainer = () => {
            )
          }}
        >
-         <img className='img-style' {...props} />
+         <img className='img-style' {...props} alt={props.alt} title={props.title} />
        </button>
     );
   }

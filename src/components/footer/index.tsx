@@ -30,11 +30,11 @@ const Footer = () => {
         <div className="w-full max-w-7xl my-2 mx-auto py-12 px-8 flex flex-row flex-wrap justify-center gap-12 border-t-4 border-stone-900" >
             <div className="columns-1 space-y-2" >
                 <span className="font-bold" >Pages</span>
-                {internalLinks.map(link => <Link href={link.href} className="block hover:underline hover:text-stone-200 hover:animate-pulse" >{link.text}</Link>)}
+                {internalLinks.map(link => <Link key={link.text} href={link.href} className="block hover:underline hover:text-stone-200 hover:animate-pulse" >{link.text}</Link>)}
             </div>
             <div className="columns-1 space-y-2" >
                 <span className="font-bold" >Socials</span>
-                {socials.map(link => <Link href={link.href} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-stone-200 hover:animate-pulse flex flex-nowrap gap-2" >{link.icon}{link.text}</Link>)}
+                {socials.map(link => <Link key={link.text} href={link.href} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-stone-200 hover:animate-pulse flex flex-nowrap gap-2" >{link.icon}{link.text}</Link>)}
             </div>
         </div>
     )

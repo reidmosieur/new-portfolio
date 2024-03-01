@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Thumbnail from "../thumbnail";
-import Cinemoji from "../../cinemoji/components/cinemoji";
-import Wordle from "../../worcl/components/wordle";
+import Cinemoji from "../../../cinemoji/components/cinemoji";
+import Wordle from "../../../worcl/components/wordle";
 import { FaCode } from "react-icons/fa";
 
 type GameNames = "cinemoji" | "worcl" | undefined;
@@ -12,7 +12,7 @@ const GamesContainer = () => {
     return (
         <>
             <div className="max-w-prose w-full mx-auto flex flex-col flex-wrap content-start gap-4" >
-                <h2 className="text-lg sm:text-xl lg:text-2xl" >Here are a couple little games I whipped up to give you a break from reading the same "about me" for the hundredth time.</h2>
+                <h2 className="text-lg sm:text-xl lg:text-2xl" >Here are a couple little games I whipped up to give you a break from reading the same &quot;about me&quot; for the hundredth time.</h2>
                 <div className="flex flex-wrap gap-4">
                     <Thumbnail 
                         imageSrc={"/worcl-icon.svg"} 
