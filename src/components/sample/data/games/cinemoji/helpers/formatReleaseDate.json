@@ -1,0 +1,9 @@
+{
+    "id": "47QO8H243G",
+    "codeString": "const formatReleaseDate = (release_date: string) => {\n    return (\n        new Date(release_date || '1970-01-01').toLocaleDateString('en-US', {\n            year: 'numeric',\n            month: 'long',\n            day: 'numeric'\n        })\n    )\n}\n\nexport default formatReleaseDate;",
+    "title": "Helpers",
+    "explanation": "",
+    "file": "data/games/cinemoji/helpers/formatReleaseDate.ts",
+    "toDo": [],
+    "displayPath": "data/games/cinemoji/helpers/formatReleaseDate.ts"
+}

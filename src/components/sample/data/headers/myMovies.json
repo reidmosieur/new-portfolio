@@ -1,0 +1,132 @@
+{
+    "name": "myMovies",
+    "folder": [
+        {
+            "name": "types",
+            "files": [
+                {
+                    "id": "K2XLRBB80B",
+                    "name": "types.ts",
+                    "active": false,
+                    "filePath": "data/components/myMovies/types/types.ts",
+                    "jsonPath": "data/components/myMovies/types/types.json",
+                    "displayPath": "data/components/myMovies/types/types.ts"
+                }
+            ]
+        },
+        {
+            "name": "context",
+            "files": [
+                {
+                    "id": "P1HS5JES33",
+                    "name": "myMoviesStateProvider.tsx",
+                    "active": false,
+                    "filePath": "data/components/myMovies/context/myMoviesStateProvider.tsx",
+                    "jsonPath": "data/components/myMovies/context/myMoviesStateProvider.json",
+                    "displayPath": "data/components/myMovies/context/myMoviesStateProvider.tsx"
+                },
+                {
+                    "id": "TJI94W78IY",
+                    "name": "myMoviesStateContext.ts",
+                    "active": false,
+                    "filePath": "data/components/myMovies/context/myMoviesStateContext.ts",
+                    "jsonPath": "data/components/myMovies/context/myMoviesStateContext.json",
+                    "displayPath": "data/components/myMovies/context/myMoviesStateContext.ts"
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "folder": [
+                {
+                    "name": "wrappedMoviePosterCard",
+                    "files": [
+                        {
+                            "id": "5LU3QAHEOP",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/myMovies/components/wrappedMoviePosterCard/index.tsx",
+                            "jsonPath": "data/components/myMovies/components/wrappedMoviePosterCard/index.json",
+                            "displayPath": "data/components/myMovies/components/wrappedMoviePosterCard/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "score",
+                    "files": [
+                        {
+                            "id": "MG7RVCPDDN",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/myMovies/components/score/index.tsx",
+                            "jsonPath": "data/components/myMovies/components/score/index.json",
+                            "displayPath": "data/components/myMovies/components/score/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "details",
+                    "files": [
+                        {
+                            "id": "2JHGKJVAQ7",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/myMovies/components/details/index.tsx",
+                            "jsonPath": "data/components/myMovies/components/details/index.json",
+                            "displayPath": "data/components/myMovies/components/details/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "container",
+                    "files": [
+                        {
+                            "id": "W2NUZTFY8M",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/myMovies/components/container/index.tsx",
+                            "jsonPath": "data/components/myMovies/components/container/index.json",
+                            "displayPath": "data/components/myMovies/components/container/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "pagination",
+                    "files": [
+                        {
+                            "id": "S9VR9CI0PA",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/myMovies/components/pagination/index.tsx",
+                            "jsonPath": "data/components/myMovies/components/pagination/index.json",
+                            "displayPath": "data/components/myMovies/components/pagination/index.tsx"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "helpers",
+            "files": [
+                {
+                    "id": "ZSAYRRQVOQ",
+                    "name": "getRatedMovies.ts",
+                    "active": false,
+                    "filePath": "data/components/myMovies/helpers/getRatedMovies.ts",
+                    "jsonPath": "data/components/myMovies/helpers/getRatedMovies.json",
+                    "displayPath": "data/components/myMovies/helpers/getRatedMovies.ts"
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "id": "TX9UICL2Z2",
+            "name": "index.tsx",
+            "active": false,
+            "filePath": "data/components/myMovies/index.tsx",
+            "jsonPath": "data/components/myMovies/index.json",
+            "displayPath": "data/components/myMovies/index.tsx"
+        }
+    ]
+}

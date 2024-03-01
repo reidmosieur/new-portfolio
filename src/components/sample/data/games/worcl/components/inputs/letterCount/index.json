@@ -1,0 +1,9 @@
+{
+    "id": "YOHERQIPQC",
+    "codeString": "import { useGameState } from \"../../../context/gameStateContext\";\n  \ninterface AdjusterButtonProps {\n    content: React.ReactNode | string;\n    onClick: () => void;\n}\n\nconst AdjusterButton = ({\n    content,\n    onClick,\n}: AdjusterButtonProps) => {\n    return (\n        <button\n            type=\"button\"\n            onClick={onClick}\n            className=\"px-4 py-2\"\n        >\n            {content}\n        </button>\n    )\n}\n\nconst LetterCount = () => {\n    const {\n        answer,\n        setAnswer,\n        guesses,\n        setGuesses,\n        currentGuess,\n        setCurrentGuess,\n        gameResultsState,\n        setGameResultsState,\n        wordLength,\n        setWordLength,\n    } = useGameState();\n\n    return (\n        <div className=\"w-fit flex flex-row flex-wrap rounded border bg-gray-200 text-black font-bold divide-x divide-black\" >\n            <AdjusterButton\n                content=\"-\"\n                onClick={() => {\n                    if (wordLength > 3) {\n                        setWordLength(wordLength - 1);\n                    }\n                }}\n            />\n            <p className=\"px-6 py-2\" >{wordLength}</p>\n            <AdjusterButton\n                content=\"+\"\n                onClick={() => {\n                    if (wordLength < 10) {\n                        setWordLength(wordLength + 1);\n                    }\n                }}\n            />\n        </div>\n    )\n}\n\nexport default LetterCount;",
+    "title": "Letter Count",
+    "explanation": "",
+    "file": "data/games/worcl/components/inputs/letterCount/index.tsx",
+    "toDo": [],
+    "displayPath": "data/games/worcl/components/inputs/letterCount/index.tsx"
+}

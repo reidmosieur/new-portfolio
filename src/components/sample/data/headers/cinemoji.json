@@ -1,0 +1,156 @@
+{
+    "name": "cinemoji",
+    "folder": [
+        {
+            "name": "types",
+            "files": [
+                {
+                    "id": "IVUTX6CJI0",
+                    "name": "types.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/types/types.ts",
+                    "jsonPath": "data/games/cinemoji/types/types.json",
+                    "displayPath": "data/games/cinemoji/types/types.ts"
+                }
+            ]
+        },
+        {
+            "name": "context",
+            "files": [
+                {
+                    "id": "0WK2LJKOY0",
+                    "name": "cinemojiStateContext.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/context/cinemojiStateContext.ts",
+                    "jsonPath": "data/games/cinemoji/context/cinemojiStateContext.json",
+                    "displayPath": "data/games/cinemoji/context/cinemojiStateContext.ts"
+                },
+                {
+                    "id": "K38I9KRJWJ",
+                    "name": "cinemojiStateProvider.tsx",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/context/cinemojiStateProvider.tsx",
+                    "jsonPath": "data/games/cinemoji/context/cinemojiStateProvider.json",
+                    "displayPath": "data/games/cinemoji/context/cinemojiStateProvider.tsx"
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "folder": [
+                {
+                    "name": "cinemoji",
+                    "files": [
+                        {
+                            "id": "MB2OCCXFLD",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/games/cinemoji/components/cinemoji/index.tsx",
+                            "jsonPath": "data/games/cinemoji/components/cinemoji/index.json",
+                            "displayPath": "data/games/cinemoji/components/cinemoji/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "card",
+                    "folder": [
+                        {
+                            "name": "movieFactsCard",
+                            "files": [
+                                {
+                                    "id": "F8550CLOLH",
+                                    "name": "imageWithScore.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/cinemoji/components/card/movieFactsCard/imageWithScore.tsx",
+                                    "jsonPath": "data/games/cinemoji/components/card/movieFactsCard/imageWithScore.json",
+                                    "displayPath": "data/games/cinemoji/components/card/movieFactsCard/imageWithScore.tsx"
+                                },
+                                {
+                                    "id": "01KE5VJQGM",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/cinemoji/components/card/movieFactsCard/index.tsx",
+                                    "jsonPath": "data/games/cinemoji/components/card/movieFactsCard/index.json",
+                                    "displayPath": "data/games/cinemoji/components/card/movieFactsCard/index.tsx"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "posterCard",
+                            "files": [
+                                {
+                                    "id": "KI5MKWMJ98",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/cinemoji/components/card/posterCard/index.tsx",
+                                    "jsonPath": "data/games/cinemoji/components/card/posterCard/index.json",
+                                    "displayPath": "data/games/cinemoji/components/card/posterCard/index.tsx"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "helpers",
+            "files": [
+                {
+                    "id": "JBMXF73A5X",
+                    "name": "setCinemojiState.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/helpers/setCinemojiState.ts",
+                    "jsonPath": "data/games/cinemoji/helpers/setCinemojiState.json",
+                    "displayPath": "data/games/cinemoji/helpers/setCinemojiState.ts"
+                },
+                {
+                    "id": "FVALFVPIZU",
+                    "name": "shuffleArray.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/helpers/shuffleArray.ts",
+                    "jsonPath": "data/games/cinemoji/helpers/shuffleArray.json",
+                    "displayPath": "data/games/cinemoji/helpers/shuffleArray.ts"
+                },
+                {
+                    "id": "OOE8HV29WQ",
+                    "name": "fetchMovieData.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/helpers/fetchMovieData.ts",
+                    "jsonPath": "data/games/cinemoji/helpers/fetchMovieData.json",
+                    "displayPath": "data/games/cinemoji/helpers/fetchMovieData.ts"
+                },
+                {
+                    "id": "47QO8H243G",
+                    "name": "formatReleaseDate.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/helpers/formatReleaseDate.ts",
+                    "jsonPath": "data/games/cinemoji/helpers/formatReleaseDate.json",
+                    "displayPath": "data/games/cinemoji/helpers/formatReleaseDate.ts"
+                }
+            ]
+        },
+        {
+            "name": "data",
+            "files": [
+                {
+                    "id": "5XGTQJFF2W",
+                    "name": "emojiMovies.ts",
+                    "active": false,
+                    "filePath": "data/games/cinemoji/data/emojiMovies.ts",
+                    "jsonPath": "data/games/cinemoji/data/emojiMovies.json",
+                    "displayPath": "data/games/cinemoji/data/emojiMovies.ts"
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "id": "MJ33W5O5YT",
+            "name": "index.tsx",
+            "active": false,
+            "filePath": "data/games/cinemoji/index.tsx",
+            "jsonPath": "data/games/cinemoji/index.json",
+            "displayPath": "data/games/cinemoji/index.tsx"
+        }
+    ]
+}

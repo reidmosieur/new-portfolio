@@ -1,0 +1,35 @@
+[
+    {
+        "title": "HelloAsync",
+        "image": {
+            "src": "/hello-async/hello-async-preview.svg",
+            "alt": "HelloAsync - A recent personal project of mine that made use of Programmatic SEO for the marketing webpage.",
+            "width": 150,
+            "height": 150
+        },
+        "path": "/my-work/",
+        "slug": "hello-async"
+    },
+    {
+        "title": "Warehouse Wireless",
+        "image": {
+            "src": "/warehouse-wireless/warehouse-wireless-preview.svg",
+            "alt": "Warehouse Wireless - My most recent employer where I developed custom tools for productivity as well as the customer facing retail website.",
+            "width": 150,
+            "height": 150
+        },
+        "path": "/my-work/",
+        "slug": "warehouse-wireless"
+    },
+    {
+        "title": "SearchAbilityScore",
+        "image": {
+            "src": "/searchabilityscore/searchabilityscore-preview.svg",
+            "alt": "SearchAbilityScore - A personal project of mine that made use of AI to score a persons ability to use Google.",
+            "width": 150,
+            "height": 150
+        },
+        "path": "/my-work/",
+        "slug": "searchabilityscore"
+    }
+]

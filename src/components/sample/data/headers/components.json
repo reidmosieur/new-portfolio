@@ -1,0 +1,31 @@
+{
+    "name": "components",
+    "folder": [
+        {
+            "name": "container",
+            "files": [
+                {
+                    "id": "RYZGOFSEUQ",
+                    "name": "index.tsx",
+                    "active": false,
+                    "filePath": "data/games/components/container/index.tsx",
+                    "jsonPath": "data/games/components/container/index.json",
+                    "displayPath": "data/games/components/container/index.tsx"
+                }
+            ]
+        },
+        {
+            "name": "thumbnail",
+            "files": [
+                {
+                    "id": "IYS1EEQLUU",
+                    "name": "index.tsx",
+                    "active": false,
+                    "filePath": "data/games/components/thumbnail/index.tsx",
+                    "jsonPath": "data/games/components/thumbnail/index.json",
+                    "displayPath": "data/games/components/thumbnail/index.tsx"
+                }
+            ]
+        }
+    ]
+}

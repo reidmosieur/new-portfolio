@@ -1,0 +1,9 @@
+{
+    "id": "ZSAYRRQVOQ",
+    "codeString": "import axios from \"axios\";\nimport { RatedMovies } from \"../types/types\";\n\ninterface GetRatedMoviesProps {\n    setRatedMovies: React.Dispatch<React.SetStateAction<RatedMovies | undefined>>;\n    page?: number;\n    sort_by?: 'created_at.asc' | 'created_at.desc';\n}\n\nconst getRatedMovies = async ({\n    setRatedMovies,\n    page = 1,\n    sort_by = 'created_at.asc',\n}: GetRatedMoviesProps) => {\n    const tmdbApiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;\n    const tmdbAccountId = process.env.NEXT_PUBLIC_TMDB_ACCOUNT_ID\n    const url = `https://api.themoviedb.org/3/account/${tmdbAccountId}/rated/movies?page=${page}&sort_by=${sort_by}`\n\n    axios.get(url, {\n        headers: {\n            Authorization: `Bearer ${tmdbApiKey}`\n        }\n    })\n    .then((response) => setRatedMovies(response.data));\n}\n\nexport default getRatedMovies;",
+    "title": "Helpers",
+    "explanation": "",
+    "file": "myMovies/helpers/getRatedMovies.ts",
+    "toDo": [],
+    "displayPath": "myMovies/helpers/getRatedMovies.ts"
+}

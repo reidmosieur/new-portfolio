@@ -1,0 +1,9 @@
+{
+    "id": "FVALFVPIZU",
+    "codeString": "const shuffleArray = (array: any[]) => {\n    for (let i = array.length -  1; i >  0; i--) {\n        const j = Math.floor(Math.random() * (i +  1));\n        [array[i], array[j]] = [array[j], array[i]];\n    }\n    return array;\n};\n\nexport default shuffleArray;",
+    "title": "Helpers",
+    "explanation": "",
+    "file": "data/games/cinemoji/helpers/shuffleArray.ts",
+    "toDo": [],
+    "displayPath": "data/games/cinemoji/helpers/shuffleArray.ts"
+}

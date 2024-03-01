@@ -1,0 +1,9 @@
+{
+    "id": "8085D1BM7P",
+    "codeString": "import { useGameState } from \"../../../context/gameStateContext\";\nimport { RowType } from \"../../../types/types\";\nimport LetterInput from \"../letterInput\"\n\nconst GridContainer = () => {\n    const {\n      wordLength,\n      setWordLength,\n      answer,\n      setAnswer,\n      guesses,\n      setGuesses,\n      currentGuess,\n      setCurrentGuess,\n      gameResultsState,\n      setGameResultsState,\n    } = useGameState();\n\n    const determineRowType = (rowIndex: number): RowType => {\n        if (gameResultsState.isGameFinished && rowIndex >= guesses.length) {\n            return 'futureGuess';\n        } else if (rowIndex < guesses.length) {\n            return 'pastGuess';\n        } else if (rowIndex === guesses.length) {\n            return 'currentGuess';\n        } else {\n            return 'futureGuess';\n        }\n    };\n    \n    return (\n        <div className=\"mx-auto flex flex-col flex-wrap gap-2 lg:gap-3\">\n            {Array.from({ length: wordLength }, (_, rowIndex) => (\n                <div key={rowIndex} className={`flex flex-row flex-nowrap gap-2 lg:gap-3`} >\n                    {Array.from({ length: wordLength }, (_, letterIndex) => (\n                        <LetterInput\n                            key={`${answer.join('')}-${rowIndex}-${letterIndex}-letterInput`}\n                            letterIndex={letterIndex}\n                            rowIndex={rowIndex}\n                            rowType={determineRowType(rowIndex)}\n                        />\n                    ))}\n                </div>\n            ))}\n        </div>\n    );\n};\n\nexport default GridContainer;",
+    "title": "Grid Container",
+    "explanation": "",
+    "file": "data/games/worcl/components/inputs/gridContainer/index.tsx",
+    "toDo": [],
+    "displayPath": "data/games/worcl/components/inputs/gridContainer/index.tsx"
+}

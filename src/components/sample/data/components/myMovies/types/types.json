@@ -1,0 +1,9 @@
+{
+    "id": "K2XLRBB80B",
+    "codeString": "type Result = {\n    adult: boolean;\n    backdrop_path: string;\n    genre_ids: string[];\n    id: number;\n    original_language: string;\n    original_title: string;\n    overview: string;\n    popularity: number;\n    poster_path: string;\n    release_date: string;\n    title: string;\n    video: boolean;\n    vote_average: number;\n    vote_count: number;\n    rating: number;\n}\n\ntype RatedMovies = {\n    page: number;\n    results: Result[];\n    total_pages: number;\n    total_results: number;\n}\n\ntype CurrentPagination = {\n    currentPage: number;\n    currentSort: 'created_at.asc' | 'created_at.desc';\n}\n\nexport type { RatedMovies, Result, CurrentPagination };",
+    "title": "Types",
+    "explanation": "",
+    "file": "myMovies/types/types.ts",
+    "toDo": [],
+    "displayPath": "myMovies/types/types.ts"
+}

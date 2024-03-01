@@ -1,0 +1,9 @@
+{
+    "id": "W0QJF6S7IS",
+    "codeString": "import { createContext, useContext } from 'react';\nimport { GameResultsState, Guess, SingleCharacter, WordleHistory } from '../types/types';\n\ninterface GameStateContextValue {\n  wordLength: number;\n  setWordLength: React.Dispatch<React.SetStateAction<number>>;\n  answer: SingleCharacter[];\n  setAnswer: React.Dispatch<React.SetStateAction<SingleCharacter[]>>;\n  guesses: Guess[];\n  setGuesses: React.Dispatch<React.SetStateAction<Guess[]>>;\n  currentGuess: Guess;\n  setCurrentGuess: React.Dispatch<React.SetStateAction<Guess>>;\n  gameResultsState: GameResultsState;\n  setGameResultsState: React.Dispatch<React.SetStateAction<GameResultsState>>;\n  displayResults: boolean;\n  setDisplayResults: React.Dispatch<React.SetStateAction<boolean>>;\n  history: WordleHistory[] | undefined;\n  setHistory: React.Dispatch<React.SetStateAction<WordleHistory[] | undefined>>;\n}\n\nexport const GameStateContext = createContext<GameStateContextValue | undefined>(undefined);\n\nexport const useGameState = () => {\n  const context = useContext(GameStateContext);\n  if (!context) {\n    throw new Error('useGameState must be used within a GameStateProvider');\n  }\n  return context;\n};",
+    "title": "Context",
+    "explanation": "",
+    "file": "data/games/worcl/context/gameStateContext.ts",
+    "toDo": [],
+    "displayPath": "data/games/worcl/context/gameStateContext.ts"
+}

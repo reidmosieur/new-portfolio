@@ -1,0 +1,80 @@
+{
+    "name": "mySpotify",
+    "folder": [
+        {
+            "name": "types",
+            "files": [
+                {
+                    "id": "05OK70CXLR",
+                    "name": "types.ts",
+                    "active": false,
+                    "filePath": "data/components/mySpotify/types/types.ts",
+                    "jsonPath": "data/components/mySpotify/types/types.json",
+                    "displayPath": "data/components/mySpotify/types/types.ts"
+                }
+            ]
+        },
+        {
+            "name": "context",
+            "files": [
+                {
+                    "id": "R8EHT0059F",
+                    "name": "spotifyStateProvider.tsx",
+                    "active": false,
+                    "filePath": "data/components/mySpotify/context/spotifyStateProvider.tsx",
+                    "jsonPath": "data/components/mySpotify/context/spotifyStateProvider.json",
+                    "displayPath": "data/components/mySpotify/context/spotifyStateProvider.tsx"
+                },
+                {
+                    "id": "Y1DVZWT8J8",
+                    "name": "spotifyStateContext.ts",
+                    "active": false,
+                    "filePath": "data/components/mySpotify/context/spotifyStateContext.ts",
+                    "jsonPath": "data/components/mySpotify/context/spotifyStateContext.json",
+                    "displayPath": "data/components/mySpotify/context/spotifyStateContext.ts"
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "folder": [
+                {
+                    "name": "card",
+                    "files": [
+                        {
+                            "id": "7I2UJ0N3XU",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/mySpotify/components/card/index.tsx",
+                            "jsonPath": "data/components/mySpotify/components/card/index.json",
+                            "displayPath": "data/components/mySpotify/components/card/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "container",
+                    "files": [
+                        {
+                            "id": "ADOI5TIHYA",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/components/mySpotify/components/container/index.tsx",
+                            "jsonPath": "data/components/mySpotify/components/container/index.json",
+                            "displayPath": "data/components/mySpotify/components/container/index.tsx"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "id": "W3LU9ZABCA",
+            "name": "index.tsx",
+            "active": false,
+            "filePath": "data/components/mySpotify/index.tsx",
+            "jsonPath": "data/components/mySpotify/index.json",
+            "displayPath": "data/components/mySpotify/index.tsx"
+        }
+    ]
+}

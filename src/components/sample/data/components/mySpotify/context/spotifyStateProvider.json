@@ -1,0 +1,9 @@
+{
+    "id": "R8EHT0059F",
+    "codeString": "import { ReactNode, useEffect, useState } from \"react\";\nimport SpotifyContext from \"./spotifyStateContext\";\nimport { TopItems } from \"../types/types\";\nimport axios from \"axios\";\nimport { myTopArtists, myTopTracks } from \"../data/myTopData\";\n\nexport const SpotifyContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {\n    const [myTopItems, setMyTopItems] = useState<TopItems[]>([]);\n\n    useEffect(() => {\n        setMyTopItems([\n            myTopArtists,\n            myTopTracks,\n        ]);\n    }, [])\n    \n    return (\n        <SpotifyContext.Provider value={{\n            myTopItems,\n            setMyTopItems,\n        }}>\n            {children}\n        </SpotifyContext.Provider>\n    );\n};",
+    "title": "Context",
+    "explanation": "",
+    "file": "mySpotify/context/spotifyStateProvider.tsx",
+    "toDo": [],
+    "displayPath": "mySpotify/context/spotifyStateProvider.tsx"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "2JHGKJVAQ7",
+    "codeString": "import formatReleaseDate from \"@/pages/games/cinemoji/helpers/formatReleaseDate\";\nimport { useMyMoviesContext } from \"../../context/myMoviesStateContext\";\nimport Score from \"../score\";\n\nconst MovieDetails = () => {\n    const {\n        selectedMovie,\n    } = useMyMoviesContext();\n\n    if (selectedMovie) {\n        return (\n            <div className=\"max-w-prose p-4 border border-stone-900 bg-stone-900 rounded-md order-2 col-span-1 md:col-span-2 md:order-first lg:order-2 lg:col-span-2 xl:col-span-3 relative\" >\n                <span>\n                    <h3 className=\"text-2xl sm:text-3xl lg:text-4xl font-bold\" >{selectedMovie?.title}</h3>\n                    {selectedMovie?.release_date && <span>{formatReleaseDate(selectedMovie?.release_date)}</span>}\n                </span>\n                <p>{selectedMovie?.overview}</p>\n                <Score \n                    type=\"overall\"\n                    ratedMovie={selectedMovie}\n                />\n            </div>\n        )\n    }\n\n    return null;\n};\n\nexport default MovieDetails;",
+    "title": "Details",
+    "explanation": "",
+    "file": "myMovies/components/details/index.tsx",
+    "toDo": [],
+    "displayPath": "myMovies/components/details/index.tsx"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "IVUTX6CJI0",
+    "codeString": "type TMDBMovie = {\n    adult: boolean;\n    backdrop_path: string;\n    genre_ids: number[];\n    id: number;\n    original_language: string;\n    original_title: string;\n    overview: string;\n    popularity: number;\n    poster_path: string;\n    release_date: string;\n    title: string;\n    video: boolean;\n    vote_average: number;\n    vote_count: number;\n    correctAnswer: boolean;\n};\n\ninterface EmojiMovies {\n    [key: string]: string;\n}\n\nexport type { TMDBMovie, EmojiMovies }",
+    "title": "Types",
+    "explanation": "",
+    "file": "data/games/cinemoji/types/types.ts",
+    "toDo": [],
+    "displayPath": "data/games/cinemoji/types/types.ts"
+}

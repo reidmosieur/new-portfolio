@@ -1,0 +1,9 @@
+{
+    "id": "Y1DVZWT8J8",
+    "codeString": "import { createContext, useContext } from \"react\";\nimport { TopItems } from \"../types/types\";\n\ninterface MySpotifyContextValue {\n    myTopItems: TopItems[];\n    setMyTopItems: React.Dispatch<React.SetStateAction<TopItems[]>>;\n}\n\nconst SpotifyContext = createContext<MySpotifyContextValue | undefined>(undefined);\n\nexport const useSpotifyContext = () => {\n    const context = useContext(SpotifyContext);\n    if (!context) {\n        throw new Error('useSpotifyContext must be used within a GameProvider');\n    }\n    return context;\n};\n\nexport default SpotifyContext;",
+    "title": "Context",
+    "explanation": "",
+    "file": "mySpotify/context/spotifyStateContext.ts",
+    "toDo": [],
+    "displayPath": "mySpotify/context/spotifyStateContext.ts"
+}

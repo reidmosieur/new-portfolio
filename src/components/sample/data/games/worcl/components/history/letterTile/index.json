@@ -1,0 +1,9 @@
+{
+    "id": "JGQYISGHPX",
+    "codeString": "import { Guess, SingleCharacter } from \"../../../types/types\";\n\ninterface LetterTileProps {\n    answer: SingleCharacter[];\n    index: number;\n    guess?: Guess;\n}\n\nconst LetterTile = ({\n    answer,\n    index,\n    guess\n}: LetterTileProps) => {\n    const getBackgroundClass = () => {\n        const baseClasses = \"w-6 h-6 text-black text-center leading-none flex items-center justify-center rounded\";\n        const answerLetter = answer[index];\n        const isCorrectPosition = guess?.word[index] === answerLetter;\n        const isInAnswer = guess?.word && answer.includes(guess?.word[index]);\n        let backgroundClass = '';\n\n        if (isCorrectPosition) {\n            backgroundClass = 'bg-green-500';\n        } else if (isInAnswer) {\n            backgroundClass = 'bg-yellow-500';\n        } else {\n            backgroundClass = 'bg-gray-300';\n        }\n\n        return `${baseClasses} ${backgroundClass}`;\n    };\n\n    const backgroundClass = getBackgroundClass();\n\n    if (guess) {\n        return (\n            <span className={backgroundClass}>{guess.word[index]}</span>\n        )\n    }\n\n    return (\n        <span className={backgroundClass}>{answer[index]}</span>\n    );\n};\n\nexport default LetterTile;",
+    "title": "Letter Tile",
+    "explanation": "",
+    "file": "data/games/worcl/components/history/letterTile/index.tsx",
+    "toDo": [],
+    "displayPath": "data/games/worcl/components/history/letterTile/index.tsx"
+}

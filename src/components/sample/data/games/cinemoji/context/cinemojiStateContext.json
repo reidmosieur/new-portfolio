@@ -1,0 +1,9 @@
+{
+    "id": "0WK2LJKOY0",
+    "codeString": "import { createContext, useContext, useState, useEffect } from 'react';\nimport { TMDBMovie } from '../types/types';\n\ninterface CinemojiContextValue {\n    initialEmojiString: string;\n    shuffledMovieKeys: string[];\n    movieResponses: TMDBMovie[];\n    displayResults: boolean;\n    answeredCorrectly: boolean;\n    setInitialEmojiString: React.Dispatch<React.SetStateAction<string>>;\n    setShuffledMovieKeys: React.Dispatch<React.SetStateAction<string[]>>;\n    setMovieResponses: React.Dispatch<React.SetStateAction<TMDBMovie[]>>;\n    setDisplayResults: React.Dispatch<React.SetStateAction<boolean>>;\n    setAnsweredCorrectly: React.Dispatch<React.SetStateAction<boolean>>;\n}\n\nconst CinemojiContext = createContext<CinemojiContextValue | undefined>(undefined);\n\nexport const useCinemojiContext = () => {\n    const context = useContext(CinemojiContext);\n    if (!context) {\n        throw new Error('useCinemojiContext must be used within a GameProvider');\n    }\n    return context;\n};\n\nexport default CinemojiContext;",
+    "title": "Context",
+    "explanation": "",
+    "file": "data/games/cinemoji/context/cinemojiStateContext.ts",
+    "toDo": [],
+    "displayPath": "data/games/cinemoji/context/cinemojiStateContext.ts"
+}

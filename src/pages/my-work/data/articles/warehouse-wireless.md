@@ -1,0 +1,15 @@
+## Currently Employed
+
+Warehouse Wireless was the start of my experience as a web developer. Previously, I acted only as a manager but, when our previous developer left, I decided to give development a try.
+
+## Why I Started With No Code
+
+At first, the pressure to get our legacy systems up to date was immense. We had not only lost our only developer but we also had a couple of other key employees move on to new jobs, employees who had the majority of training with our legacy systems. Given that these tools were over a decade old, with some minor updates along the way, they were clunky and they weren't well adapted to the workflow of the company anymore. As a result, I had to sacrifice learning how to write code along with how to apply the fundamentals of web development to be able to gain speed. This was why I chose to create our new apps using the no code tool Bubble.
+
+## Internal Tools
+
+I used Bubble to integrate with an essential vendor for the business, our diagnostics software, and our primary disposition channel, eBay. The primary function of this tool was to take our diagnostics data and automate as much of the process it took to list to eBay as possible, mostly just taking existing data and formatting it for usage with the API. Shortly thereafter, I added in functionality to manage our inventory more accurately and automatically "relist" our existing inventory when it had gone stale. This basically was just ending all existing listings, finding them in our database, and creating the listing again.
+
+After our system had been updated and streamlined, I set forth on actually programming a web app to replace the Bubble implementation. As is the case with most 1.0 versions of software, it was clunky and riddled with bugs. As is also the case with no code software, it was extremely clunky and riddled with bugs. Despite that, the tool was able to increase the efficiency of our listing team enough to reduce the need from two employees working fulltime to list our considerable inventory down to one employee working on that part time. Now, after programming a dedicated web app using Next.js and Strapi for "content management" the app has the same efficiency without the clunky interface and a considerable increase in speed.
+
+Bubble was a great tool at the time. It allowed me to spend less time worrying about how code is written, which in my opinion is the easy part, and more time focusing on the fundamentals of web development, which is the hard part. This means worrying about when and how data is written, how the logic of an app is architected, how the data itself is architected, and operating within the constraints of a no code platform. Now that I have fully learned how to write code, I've been able to improve the fundamentals I learned using no code tools.

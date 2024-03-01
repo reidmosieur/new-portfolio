@@ -1,0 +1,9 @@
+{
+    "id": "TJI94W78IY",
+    "codeString": "import { SetStateAction, createContext, useContext } from \"react\";\nimport { CurrentPagination, RatedMovies, Result } from \"../types/types\";\n\ninterface MyMoviesContextValue {\n    ratedMovies: RatedMovies | undefined;\n    selectedMovie: Result | undefined;\n    currentPagination: CurrentPagination;\n    fetching: boolean;\n    setRatedMovies: React.Dispatch<SetStateAction<RatedMovies | undefined>>;\n    setSelectedMovie: React.Dispatch<SetStateAction<Result | undefined>>;\n    setCurrentPagination: React.Dispatch<SetStateAction<CurrentPagination>>;\n    setFetching: React.Dispatch<SetStateAction<boolean>>;\n}\n\nconst MyMoviesContext = createContext<MyMoviesContextValue | undefined>(undefined);\n\nexport const useMyMoviesContext = () => {\n    const context = useContext(MyMoviesContext);\n    if (!context) {\n        throw new Error('useMyMoviesContext must be used within a GameProvider');\n    }\n    return context;\n};\n\nexport default MyMoviesContext;",
+    "title": "Context",
+    "explanation": "",
+    "file": "myMovies/context/myMoviesStateContext.ts",
+    "toDo": [],
+    "displayPath": "myMovies/context/myMoviesStateContext.ts"
+}

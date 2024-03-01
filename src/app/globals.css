@@ -24,10 +24,157 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(249 115 22);
+  border-radius: 1rem;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.spotify-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.spotify-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.spotify-scrollbar::-webkit-scrollbar-thumb {
+  background: #76d962;
+  border-radius: 1rem;
+}
+
+.markdown {
+  font-size: 16pt;
+
+  @media (min-width: 768px) {
+      font-size: 18pt;
+  }
+
+  @media (min-width: 1024px) {
+      font-size: 20pt;
+  }
+}
+
+.markdown .h1-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+  font-size: 22pt;
+
+  @media (min-width: 640px) {
+      font-size: 24pt;
+  }
+
+  @media (min-width: 1024px) {
+      font-size: 26pt;
+  }
+}
+
+.markdown .h2-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+  font-size: 20pt;
+
+  @media (min-width: 640px) {
+      font-size: 22pt;
+  }
+
+  @media (min-width: 1024px) {
+      font-size: 24pt;
+  }
+}
+
+.markdown .h3-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+  font-weight: 18pt;
+
+  @media (min-width: 640px) {
+      font-size: 20pt;
+  }
+
+  @media (min-width: 1024px) {
+      font-size: 22pt;
+  }
+}
+
+.markdown .h4-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+}
+
+.markdown .h5-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+}
+
+.markdown .h6-style {
+  margin: 3rem 0 0 0;
+  font-weight: bold;
+}
+
+.markdown .p-style {
+  margin: 1rem 0 0 0;
+}
+
+.markdown .a-style {
+  text-decoration: underline;
+  color: rgb(13 148 136);
+}
+
+.markdown .img-style {
+  margin: 4rem 0 4rem 0;
+}
+
+.markdown .ul-style {
+  margin: 1rem 0 0 1rem;
+}
+
+.markdown .ol-style {
+  margin: 1rem 0 0 1rem;
+}
+
+.markdown .li-style {
+  margin: 1rem 0 0 0;
+}
+
+.markdown .blockquote-style {
+  padding-left: 4px;
+  border-left: 3px solid #f97316;
+  color: #f97316;
+}
+
+.markdown .hr-style {
+  border-bottom: 2px solid #333;
+  margin: 3rem 0 3rem 0;
+}
+
+.markdown .em-style {
+  font-style: italic;
+}
+
+.markdown .strong-style {
+font-weight: bold;
+  color: #f97316;
+}
+
+.markdown .inlineCode-style {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
 }

@@ -1,0 +1,181 @@
+{
+    "name": "worcl",
+    "folder": [
+        {
+            "name": "types",
+            "files": [
+                {
+                    "id": "3HU9V8DKMP",
+                    "name": "types.ts",
+                    "active": false,
+                    "filePath": "data/games/worcl/types/types.ts",
+                    "jsonPath": "data/games/worcl/types/types.json",
+                    "displayPath": "data/games/worcl/types/types.ts"
+                }
+            ]
+        },
+        {
+            "name": "styles"
+        },
+        {
+            "name": "context",
+            "files": [
+                {
+                    "id": "W5OO0MUVR0",
+                    "name": "gameStateProvider.tsx",
+                    "active": false,
+                    "filePath": "data/games/worcl/context/gameStateProvider.tsx",
+                    "jsonPath": "data/games/worcl/context/gameStateProvider.json",
+                    "displayPath": "data/games/worcl/context/gameStateProvider.tsx"
+                },
+                {
+                    "id": "W0QJF6S7IS",
+                    "name": "gameStateContext.ts",
+                    "active": false,
+                    "filePath": "data/games/worcl/context/gameStateContext.ts",
+                    "jsonPath": "data/games/worcl/context/gameStateContext.json",
+                    "displayPath": "data/games/worcl/context/gameStateContext.ts"
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "folder": [
+                {
+                    "name": "inputs",
+                    "folder": [
+                        {
+                            "name": "gridContainer",
+                            "files": [
+                                {
+                                    "id": "8085D1BM7P",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/worcl/components/inputs/gridContainer/index.tsx",
+                                    "jsonPath": "data/games/worcl/components/inputs/gridContainer/index.json",
+                                    "displayPath": "data/games/worcl/components/inputs/gridContainer/index.tsx"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "letterCount",
+                            "files": [
+                                {
+                                    "id": "YOHERQIPQC",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/worcl/components/inputs/letterCount/index.tsx",
+                                    "jsonPath": "data/games/worcl/components/inputs/letterCount/index.json",
+                                    "displayPath": "data/games/worcl/components/inputs/letterCount/index.tsx"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "letterInput",
+                            "files": [
+                                {
+                                    "id": "COL1WJT3MT",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/worcl/components/inputs/letterInput/index.tsx",
+                                    "jsonPath": "data/games/worcl/components/inputs/letterInput/index.json",
+                                    "displayPath": "data/games/worcl/components/inputs/letterInput/index.tsx"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "history",
+                    "folder": [
+                        {
+                            "name": "letterTile",
+                            "files": [
+                                {
+                                    "id": "JGQYISGHPX",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/worcl/components/history/letterTile/index.tsx",
+                                    "jsonPath": "data/games/worcl/components/history/letterTile/index.json",
+                                    "displayPath": "data/games/worcl/components/history/letterTile/index.tsx"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "letterTileContainer",
+                            "files": [
+                                {
+                                    "id": "EE170LZIG7",
+                                    "name": "index.tsx",
+                                    "active": false,
+                                    "filePath": "data/games/worcl/components/history/letterTileContainer/index.tsx",
+                                    "jsonPath": "data/games/worcl/components/history/letterTileContainer/index.json",
+                                    "displayPath": "data/games/worcl/components/history/letterTileContainer/index.tsx"
+                                }
+                            ]
+                        }
+                    ],
+                    "files": [
+                        {
+                            "id": "U6UO1529C1",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/games/worcl/components/history/index.tsx",
+                            "jsonPath": "data/games/worcl/components/history/index.json",
+                            "displayPath": "data/games/worcl/components/history/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "wordle",
+                    "files": [
+                        {
+                            "id": "MCDSWKPSUK",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/games/worcl/components/wordle/index.tsx",
+                            "jsonPath": "data/games/worcl/components/wordle/index.json",
+                            "displayPath": "data/games/worcl/components/wordle/index.tsx"
+                        }
+                    ]
+                },
+                {
+                    "name": "answerDefinitions",
+                    "files": [
+                        {
+                            "id": "XYT8RYPXUG",
+                            "name": "index.tsx",
+                            "active": false,
+                            "filePath": "data/games/worcl/components/answerDefinitions/index.tsx",
+                            "jsonPath": "data/games/worcl/components/answerDefinitions/index.json",
+                            "displayPath": "data/games/worcl/components/answerDefinitions/index.tsx"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "helpers",
+            "files": [
+                {
+                    "id": "9X7E2ETQ4J",
+                    "name": "handleSubmit.ts",
+                    "active": false,
+                    "filePath": "data/games/worcl/helpers/handleSubmit.ts",
+                    "jsonPath": "data/games/worcl/helpers/handleSubmit.json",
+                    "displayPath": "data/games/worcl/helpers/handleSubmit.ts"
+                }
+            ]
+        }
+    ],
+    "files": [
+        {
+            "id": "3X624RKU38",
+            "name": "index.tsx",
+            "active": false,
+            "filePath": "data/games/worcl/index.tsx",
+            "jsonPath": "data/games/worcl/index.json",
+            "displayPath": "data/games/worcl/index.tsx"
+        }
+    ]
+}

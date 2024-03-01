@@ -1,0 +1,9 @@
+{
+    "id": "K38I9KRJWJ",
+    "codeString": "import { ReactNode, useEffect, useState } from \"react\";\nimport CinemojiContext from \"./cinemojiStateContext\";\nimport { TMDBMovie } from \"../types/types\";\nimport setCinemojiState from \"../helpers/setCinemojiState\";\n\nexport const CinemjoiContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {\n    const [initialEmojiString, setInitialEmojiString] = useState('');\n    const [shuffledMovieKeys, setShuffledMovieKeys] = useState<string[]>([]);\n    const [movieResponses, setMovieResponses] = useState<TMDBMovie[]>([]);\n    const [displayResults, setDisplayResults] = useState<boolean>(false);\n    const [answeredCorrectly, setAnsweredCorrectly] = useState<boolean>(false);\n\n    useEffect(() => {\n        setCinemojiState({ setInitialEmojiString, setShuffledMovieKeys, setMovieResponses })\n    }, []);\n\n    return (\n        <CinemojiContext.Provider value={{ \n            initialEmojiString, \n            shuffledMovieKeys, \n            movieResponses, \n            displayResults,\n            answeredCorrectly,\n            setInitialEmojiString, \n            setShuffledMovieKeys, \n            setMovieResponses,\n            setDisplayResults,\n            setAnsweredCorrectly,\n        }}>\n            {children}\n        </CinemojiContext.Provider>\n    );\n};",
+    "title": "Context",
+    "explanation": "",
+    "file": "data/games/cinemoji/context/cinemojiStateProvider.tsx",
+    "toDo": [],
+    "displayPath": "data/games/cinemoji/context/cinemojiStateProvider.tsx"
+}

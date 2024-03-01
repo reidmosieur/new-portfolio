@@ -1,0 +1,9 @@
+{
+    "id": "3HU9V8DKMP",
+    "codeString": "type SingleCharacter = 'A' | 'B' | 'C' | 'D' | 'E' | 'F' | 'G' | 'H' | 'I' | 'J' | 'K' | 'L' | 'M' | 'N' | 'O' | 'P' | 'Q' | 'R' | 'S' | 'T' | 'U' | 'V' | 'W' | 'X' | 'Y' | 'Z';\n\ntype Guess = {\n    word: SingleCharacter[];\n    correct: boolean | undefined;\n}\n\ntype RowType = 'currentGuess' | 'pastGuess' | 'futureGuess'\n\ntype GameResultsState = {\n    isGameFinished: boolean;\n    isGameWon: boolean;\n}\n\ntype Pronunciation = {\n    audio?: string;\n    text?: string;\n    sourceUrl?: string;\n    license?: {\n        name: string;\n        url: string;\n    };\n};\n\ntype Definition = {\n    definition: string;\n    synonyms: string[];\n    antonyms: string[];\n    example?: string;\n};\n\ntype Meaning = {\n    partOfSpeech: string;\n    definitions: Definition[];\n    synonyms: string[];\n    antonyms: string[];\n};\n\ntype WordResponse = {\n    word: string;\n    phonetics: Pronunciation[];\n    meanings: Meaning[];\n    license: {\n        name: string;\n        url: string;\n    };\n    sourceUrls: string[];\n}[];\n\ntype WordleHistory = {\n    wordLength: number;\n    answer: SingleCharacter[];\n    guesses: Guess[];\n    currentGuess: Guess;\n    gameResultsState: GameResultsState;\n}\n\nexport type { SingleCharacter, Guess, RowType, GameResultsState, Pronunciation, Definition, Meaning, WordResponse, WordleHistory };",
+    "title": "Types",
+    "explanation": "",
+    "file": "data/games/worcl/types/types.ts",
+    "toDo": [],
+    "displayPath": "data/games/worcl/types/types.ts"
+}

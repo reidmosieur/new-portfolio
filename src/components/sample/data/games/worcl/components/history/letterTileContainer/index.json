@@ -1,0 +1,9 @@
+{
+    "id": "EE170LZIG7",
+    "codeString": "const LetterTileContainer = (children: any) => {\n    return (\n        <div className=\"w-fit mx-auto flex flex-row flex-nowrap gap-2\" >\n            {children}\n        </div>\n    )\n}\n\nexport default LetterTileContainer;",
+    "title": "Letter Tile Container",
+    "explanation": "",
+    "file": "data/games/worcl/components/history/letterTileContainer/index.tsx",
+    "toDo": [],
+    "displayPath": "data/games/worcl/components/history/letterTileContainer/index.tsx"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "9X7E2ETQ4J",
+    "codeString": "import { Guess, SingleCharacter } from \"../types/types\";\n\ninterface handleSubmitProps {\n    e: React.KeyboardEvent<HTMLInputElement> | React.FormEvent<HTMLFormElement>;\n    letterIndex: number;\n    rowIndex: number;\n    answer: SingleCharacter[],\n    setGuesses: React.Dispatch<React.SetStateAction<Guess[]>>,\n    currentGuess: Guess,\n    setCurrentGuess: React.Dispatch<React.SetStateAction<Guess>>,\n    setIsGameFinished: React.Dispatch<React.SetStateAction<boolean>>,\n}\n  \nconst handleSubmit = ({\n    e,\n    letterIndex,\n    rowIndex,\n    answer,\n    setGuesses,\n    currentGuess,\n    setCurrentGuess,\n    setIsGameFinished,\n}: handleSubmitProps) => {\n    if (currentGuess.word.join('') === answer.join('')) {\n        setIsGameFinished(true);\n    }\n    const newWord = [...currentGuess.word];\n    newWord[letterIndex] = (e.target as HTMLInputElement).value.toUpperCase() as SingleCharacter; // Update the current cell\n    setCurrentGuess({\n        word: [],\n        correct: undefined,\n    });\n    setGuesses(prev => {\n        const newGuesses = [...prev];\n        newGuesses[rowIndex] = {\n            word: newWord,\n            correct: undefined,\n        };\n        return newGuesses;\n    });\n}\n\nexport default handleSubmit;",
+    "title": "Helpers",
+    "explanation": "",
+    "file": "data/games/worcl/helpers/handleSubmit.ts",
+    "toDo": [],
+    "displayPath": "data/games/worcl/helpers/handleSubmit.ts"
+}

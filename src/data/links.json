@@ -1,0 +1,20 @@
+{
+    "internals": [
+        {
+            "text": "Home",
+            "href": "/"
+        },
+        {
+            "text": "About",
+            "href": "/#about-me"
+        },
+        {
+            "text": "Recent Distractions",
+            "href": "/#recent-distractions"
+        },
+        {
+            "text": "My Work",
+            "href": "/my-work"
+        }
+    ]
+}

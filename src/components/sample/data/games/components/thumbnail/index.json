@@ -1,0 +1,9 @@
+{
+    "id": "IYS1EEQLUU",
+    "codeString": "import Image from \"next/image\";\n\ntype ThumbnailProps = {\n    imageSrc: string;\n    imageAlt: string;\n    onClick: () => void;\n    name: string;\n    activeGame: \"cinemoji\" | \"worcl\" | undefined;\n}\n\nconst Thumbnail = ({\n    imageSrc,\n    imageAlt,\n    onClick,\n    name,\n    activeGame,\n}: ThumbnailProps) => {\n    return (\n        <button\n            onClick={onClick}\n            className={`group relative ${activeGame === name.toLowerCase() ? 'bg-teal-600' : 'bg-stone-900'} p-1 rounded`}\n        >\n            <Image src={imageSrc} alt={imageAlt} width={100} height={100} />\n            <span className=\"absolute w-32 -top-12 left-1/2 z-10 transform -translate-x-1/2 scale-0 rounded bg-white p-2 text-stone-900 text-center font-bold transition duration-200 ease-in-out opacity-0 group-hover:opacity-100 group-hover:scale-100\">\n                {name}\n            </span>\n        </button>\n    )\n};\n\nexport default Thumbnail;",
+    "title": "Thumbnail",
+    "explanation": "",
+    "file": "data/games/components/thumbnail/index.tsx",
+    "toDo": [],
+    "displayPath": "data/games/components/thumbnail/index.tsx"
+}

@@ -1,0 +1,9 @@
+{
+    "id": "P1HS5JES33",
+    "codeString": "import { ReactNode, useEffect, useState } from \"react\";\nimport MyMoviesContext from \"./myMoviesStateContext\";\nimport { CurrentPagination, RatedMovies, Result } from \"../types/types\";\nimport getRatedMovies from \"../helpers/getRatedMovies\";\n\nexport const MyMoviesContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {\n    const [ratedMovies, setRatedMovies] = useState<RatedMovies | undefined>(undefined);\n    const [selectedMovie, setSelectedMovie] = useState<Result | undefined>(undefined);\n    const [currentPagination, setCurrentPagination] = useState<CurrentPagination>({\n        currentPage: 1,\n        currentSort: 'created_at.asc',\n    });\n    const [fetching, setFetching] = useState<boolean>(true);\n\n    useEffect(() => {\n        setFetching(true);\n        getRatedMovies({\n            setRatedMovies,\n            page: currentPagination.currentPage,\n            sort_by: currentPagination.currentSort,\n        })\n        .then(() => setFetching(false))\n    }, [currentPagination, getRatedMovies]);\n\n    return (\n        <MyMoviesContext.Provider value={{\n            ratedMovies,\n            selectedMovie,\n            currentPagination,\n            fetching,\n            setRatedMovies,\n            setSelectedMovie,\n            setCurrentPagination,\n            setFetching,\n        }}>\n            {children}\n        </MyMoviesContext.Provider>\n    );\n};",
+    "title": "Context",
+    "explanation": "",
+    "file": "myMovies/context/myMoviesStateProvider.tsx",
+    "toDo": [],
+    "displayPath": "myMovies/context/myMoviesStateProvider.tsx"
+}

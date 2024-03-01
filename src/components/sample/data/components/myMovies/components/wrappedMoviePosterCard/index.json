@@ -1,0 +1,9 @@
+{
+    "id": "5LU3QAHEOP",
+    "codeString": "import React, { useState } from 'react';\nimport Image from 'next/image';\nimport { useMyMoviesContext } from '../../context/myMoviesStateContext';\nimport { Result } from '../../types/types';\nimport Score from '../score';\nimport { useRouter } from 'next/router';\n\ntype WrappedMoviePosterCardProps = {\n    result: Result,\n}\n\nconst WrappedMoviePosterCard = ({\n    result,\n}: WrappedMoviePosterCardProps) => {\n    const {\n        selectedMovie,\n        setSelectedMovie,\n    } = useMyMoviesContext();\n\n    const {\n        title,\n        poster_path,\n    } = result;\n\n    const router = useRouter();\n\n    return (\n        <button\n            className={`p-2 rounded ${selectedMovie?.id === result.id ? 'bg-teal-600' : 'bg-stone-300'} relative group'}`}\n            onClick={() => {\n                if (selectedMovie?.id !== result.id) {\n                    setSelectedMovie(result);\n                    router.push('/#my-movies')\n                } else {\n                    setSelectedMovie(undefined);\n                }\n            }}\n        >\n            <Image src={`https://image.tmdb.org/t/p/w200${poster_path}`} alt={title} width={200} height={300} className=\"rounded shadow shadow-lg shadow-stone-400\" />\n            <Score \n                type='mine' \n                ratedMovie={result}\n            />\n        </button>\n    );\n};\n\nexport default WrappedMoviePosterCard;",
+    "title": "Wrapped Movie Poster Card",
+    "explanation": "",
+    "file": "myMovies/components/wrappedMoviePosterCard/index.tsx",
+    "toDo": [],
+    "displayPath": "myMovies/components/wrappedMoviePosterCard/index.tsx"
+}

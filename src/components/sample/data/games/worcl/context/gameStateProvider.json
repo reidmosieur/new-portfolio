@@ -1,0 +1,9 @@
+{
+    "id": "W5OO0MUVR0",
+    "codeString": "import React, { ReactNode, useState } from 'react';\nimport { GameStateContext } from './gameStateContext';\nimport { GameResultsState, Guess, SingleCharacter, WordleHistory } from '../types/types';\n\ninterface GameStateProviderProps {\n  children: ReactNode;\n}\n\nconst GameStateProvider: React.FC<GameStateProviderProps> = ({ children }) => {\n  // Initialize state variables\n  const [wordLength, setWordLength] = useState<number>(5);\n  const [answer, setAnswer] = useState<SingleCharacter[]>([]);\n  const [guesses, setGuesses] = useState<Guess[]>([]);\n  const [currentGuess, setCurrentGuess] = useState<Guess>({\n    word: [],\n    correct: undefined,\n  } as Guess);\n  const [gameResultsState, setGameResultsState] = useState<GameResultsState>({\n    isGameFinished: false,\n    isGameWon: false,\n  });\n  const [displayResults, setDisplayResults] = useState<boolean>(false);\n  const [history, setHistory] = useState<WordleHistory[] | undefined>([]);\n\n  // Define the value that will be passed to the context consumers\n  const value = {\n    wordLength,\n    setWordLength,\n    answer,\n    setAnswer,\n    guesses,\n    setGuesses,\n    currentGuess,\n    setCurrentGuess,\n    gameResultsState,\n    setGameResultsState,\n    displayResults,\n    setDisplayResults,\n    history,\n    setHistory,\n  };\n\n  // Provide the context value to the children\n  return (\n    <GameStateContext.Provider value={value}>\n      {children}\n    </GameStateContext.Provider>\n  );\n};\n\nexport default GameStateProvider;",
+    "title": "Context",
+    "explanation": "",
+    "file": "data/games/worcl/context/gameStateProvider.tsx",
+    "toDo": [],
+    "displayPath": "data/games/worcl/context/gameStateProvider.tsx"
+}
