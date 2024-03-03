@@ -12,6 +12,7 @@ import MyMovies from "@/components/myMovies";
 import { SampleCodeContextProvider } from "@/components/sample/context/samplesStateProvider";
 import Link from "next/link";
 import pageData from "../data/index.json"
+import ContactMe from "@/components/contactMe";
 
 const tagIconClasses = "h-4 w-4 my-auto"
 

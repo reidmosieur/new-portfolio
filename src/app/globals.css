@@ -73,7 +73,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .markdown .h1-style {
-  margin: 3rem 0 0 0;
   font-weight: bold;
   font-size: 22pt;
 

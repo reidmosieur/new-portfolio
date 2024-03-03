@@ -8,6 +8,7 @@ import { useSampleCodeContext } from "./context/samplesStateContext";
 import { File, Folder } from "./types/types";
 import findLeastNestedItem from "./helpers/findLeastNestedFile";
 import ReactMarkdown from "react-markdown";
+import ContactMe from "../contactMe";
 
 type SampleTypes = {
     headerJsonName: string, 
@@ -149,6 +150,10 @@ const Sample = ({
                                 >
                                     {activeSample.codeString}
                                 </SyntaxHighlighter>
+                            </div>
+                            <div className="relative mt-10 p-8 w-full mx-auto bg-stone-900 rounded-md text-white flex flex-nowrap justify-center gap-4" >
+                                <span>Like what you see? Let&apos;s get in touch!</span>
+                                <ContactMe />
                             </div>
                             {activeSample.explanation &&
                                 <ReactMarkdown components={components} className={'markdown'} >

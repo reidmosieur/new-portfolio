@@ -4,6 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
 import links from "../../data/links.json"
+import ContactMe from "../contactMe";
 
 const Footer = () => {
     const internalLinks = links.internals;
@@ -35,6 +36,10 @@ const Footer = () => {
             <div className="columns-1 space-y-2" >
                 <span className="font-bold" >Socials</span>
                 {socials.map(link => <Link key={link.text} href={link.href} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-stone-200 hover:animate-pulse flex flex-nowrap gap-2" >{link.icon}{link.text}</Link>)}
+            </div>
+            <div className="h-fit flex flex-nowrap gap-2" >
+                <span className="font-bold" >Contact Me</span>
+                <ContactMe />
             </div>
         </div>
     )

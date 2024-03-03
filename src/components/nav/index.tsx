@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import links from '../../data/links.json'
+import ContactMe from "../contactMe";
 
 const pathStyler = (path: string, currentPath: string) => {
     if (path === currentPath) {
@@ -39,6 +40,7 @@ const Nav = () => {
                                 </li>
                             ))}
                         </ul>
+                        <ContactMe />
                     </nav>
                 }
             </div>
@@ -55,6 +57,7 @@ const Nav = () => {
                         </li>
                     ))}
                 </ul>
+                <ContactMe />
             </nav>
         </>
     );
