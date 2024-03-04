@@ -2,6 +2,7 @@ import Link from "next/link";
 import links from "../data/links.json"
 import 'tailwindcss/tailwind.css';
 import "../app/globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const Page = () => {
     return (
@@ -42,6 +43,7 @@ const Page = () => {
                     </div>
                 </div>
             </main>
+            <Analytics />
           </body>
         </html>
     )
