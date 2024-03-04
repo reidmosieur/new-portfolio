@@ -37,14 +37,11 @@ const FileTree = ({ folder, depth =  1 }: FileTreeProps) => {
     const setNewActiveFile = (file: File) => {
         setSamplesStructure((prev: Folder | undefined) => {
             if (!prev) {
-                console.log('no prev');
                 return prev;
             }; // If there's no previous structure, return as is
 
             // Use the helper function to set the active file and update the structure
             const updatedStructure = setActiveFile(prev, file);
-
-            console.log(JSON.stringify(updatedStructure, null, 2));
 
             return updatedStructure;
         });

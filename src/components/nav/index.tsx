@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { CgMenu, CgMenuRight} from "react-icons/cg";
 import links from '../../data/links.json'
 import ContactMe from "../contactMe";
 
@@ -21,10 +22,10 @@ const Nav = () => {
 
     return (
         <>
-            <div className="sticky md:hidden top-0 z-30 w-full px-2 py-2 bg-black flex flex-col flex-wrap" >
+            <div className={`sticky md:hidden top-0 z-30 w-full px-2 py-2 bg-black flex flex-col flex-wrap ${hamburgerOpen && 'border-b-4 border-stone-900'}`} >
                 <button className="w-fit ml-auto" onClick={() => setHamburgerOpen(!hamburgerOpen)} >
                     <span className="sr-only">Open Menu</span>
-                    <GiHamburgerMenu className="w-8 h-8" />
+                    {hamburgerOpen ? <CgMenuRight className="w-8 h-8" /> : <CgMenu className="w-8 h-8" />}
                 </button>
                 {hamburgerOpen &&
                     <nav className="w-full flex flex-col flex-wrap gap-4" >
@@ -39,8 +40,13 @@ const Nav = () => {
                                     </Link>
                                 </li>
                             ))}
+                            <span
+                                className="mt-1 flex flex-nowrap gap-2 font-bold"
+                            >
+                                Contact Me
+                                <ContactMe />
+                            </span>
                         </ul>
-                        <ContactMe />
                     </nav>
                 }
             </div>

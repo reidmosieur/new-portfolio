@@ -33,7 +33,7 @@ const MyTopSpotifyContainer = () => {
                 <Image src={"/spotify-icon.png"} alt={"My listening data courtesy of Spotify"} width={40} height={40} />
             </span>
             <div 
-                className="max-h-96 px-4 overflow-y-scroll flex flex-wrap justify-center gap-16 spotify-scrollbar"
+                className="max-h-96 px-4 md:overflow-y-scroll flex flex-wrap justify-center gap-16 spotify-scrollbar"
             >
                 {myTopArtists &&
                     <div className="flex flex-col flex-wrap gap-4" >

@@ -8,7 +8,6 @@ export const SampleCodeContextProvider: React.FC<{ children: ReactNode }> = ({ c
     const [activeSample, setActiveSample] = useState<CodeSample | undefined>(undefined);
 
     useEffect(() => {
-        console.log('sample structure changed...', samplesStructure)
         if (samplesStructure) {
             let activeSamplePath;
             const findActiveFile = (folder: Folder) => {
@@ -35,7 +34,6 @@ export const SampleCodeContextProvider: React.FC<{ children: ReactNode }> = ({ c
             findActiveFile(samplesStructure);
     
             if (activeSamplePath) {
-                console.log(activeSamplePath)
                 import(`../${activeSamplePath}`)
                     .then(module => {
                         setActiveSample(module.default);
