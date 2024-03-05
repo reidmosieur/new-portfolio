@@ -77,7 +77,7 @@ const Page = () => {
                             ))}
                         </div>
                         <div className="flex flex-col-reverse flex-wrap gap-4 md:block" >
-                            <Image className="md:max-w-72 md:float-right md:ml-6 rounded-md" src={'/ReidMosieur.JPEG  '} alt={'An image of a handsome, charming developer named Reid Mosieur ;)'} width={1536} height={2048} />
+                            <Image className="md:max-w-72 md:float-right md:ml-6 rounded-md" src="/ReidMosieur.JPEG" alt={'An image of a handsome, charming developer named Reid Mosieur ;)'} width={1536} height={2048} />
                             {aboutMeBlocks.blockOne.map((aboutMeText, index) => (
                                 <AboutMe 
                                     key={index}
