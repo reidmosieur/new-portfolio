@@ -13,6 +13,7 @@ import { SampleCodeContextProvider } from "@/components/sample/context/samplesSt
 import Link from "next/link";
 import pageData from "../data/index.json"
 import ContactMe from "@/components/contactMe";
+import Image from "next/image";
 
 const tagIconClasses = "h-4 w-4 my-auto"
 
@@ -53,10 +54,6 @@ const Page = () => {
         aboutMeBlocks,
     } = pageData;
 
-    const aboutMeTextOne = `I\'m a technological mercenary (full stack developer for hire), seeker of truth, and pursuer of true autonomy.`
-    const aboutMeTextTwo = `My goal is to be good at what I do. How do I define that? Simple: I don't want to just bring high quality code to any project I work on but to do so elegantly and efficiently. I believe developers should prioritize the needs of the business over the needs of the project, meaning doing what it takes to increase conversions, user retention, and reduce the cost of development without sacrificing usability, security, or performance.`
-    const aboutMeTextThree = `In my free time, I\'m just like any other dopamine addicted little lab rat: I spend time with my wife and kids, play video games, and watch movies. Here are some of the things I\'ve been into lately...`
-
     return (
         <Layout>
             <SampleCodeContextProvider>
@@ -79,12 +76,16 @@ const Page = () => {
                                 </Tag>
                             ))}
                         </div>
-                        {aboutMeBlocks.blockOne.map((aboutMeText, index) => (
-                            <AboutMe 
-                                key={index}
-                                aboutMeText={aboutMeText}
-                            />
-                        ))}
+                        <div className="flex flex-col-reverse flex-wrap gap-4 md:block" >
+                            <Image className="md:max-w-72 md:float-right md:ml-6 rounded-md" src={'/ReidMosieur.JPEG  '} alt={'An image of a handsome, charming developer named Reid Mosieur ;)'} width={1536} height={2048} />
+                            {aboutMeBlocks.blockOne.map((aboutMeText, index) => (
+                                <AboutMe 
+                                    key={index}
+                                    aboutMeText={aboutMeText}
+                                    extraClasses="md:my-2"
+                                />
+                            ))}
+                        </div>
                         <p className="flex flex-nowrap gap-2" >Click these to check out the actual code for what you&apos;re looking at <FaCode className="text-orange-400 my-auto" /></p>
                         <small>Want to get straight into things with some of my projects? Check out my latest project and the thought process behind it <Link href="/my-work/hello-async" className="text-teal-600 underline" >here</Link>.</small>
                     </section>
