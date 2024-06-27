@@ -48,56 +48,73 @@ const FileTree = ({ folder, depth =  1 }: FileTreeProps) => {
     };
 
     return (
-        <div className='max-w-full lg:max-w-sm grow bg-[#f5f2f0] text-black rounded-md'>
-            <ul
-                className='lg:w-[24rem] sm:text-lg lg:text-xl group'
+      <div className="h-fit max-w-full lg:max-w-sm grow bg-[#f5f2f0] text-black rounded-md">
+        <ul
+          className="lg:w-[24rem] sm:text-lg lg:text-xl group"
+          style={{
+            fontFamily:
+              'Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace',
+          }}
+        >
+          {folder.name && (
+            <li className={`columns-1`}>
+              <button
+                className={`w-full flex flex-nowrap gap-2 hover:underline`}
                 style={{
-                    fontFamily: 'Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace'
+                  paddingLeft: `${depth}rem`,
+                  color: `rgb(0, 119, 170)`,
                 }}
-            >
-                {folder.name &&
-                    <li className={`columns-1`}>
-                        <button
-                            className={`w-full flex flex-nowrap gap-2 hover:underline`}
-                            style={{
-                                paddingLeft: `${depth}rem`,
-                                color: `rgb(0, 119, 170)`,
-                            }}
-                            onClick={() => setOpen(!open)}
-                        >
-                            {open ? <FaFolderOpen className='my-auto' /> : <FaFolder className='my-auto' />}
-                            {folder.name}
-                        </button>
-                        <div className={`${open ? 'block' : 'hidden'} transition-all duration-1000 ease-in-out`}>
-                            {folder.folder?.map((subFolder, index) => (
-                                <div className={`lg:w-[24rem] flex flex-nowrap gap-2`} key={subFolder.name}> 
-                                    <div>
-                                        <FileTree folder={subFolder} depth={depth +  1} />
-                                    </div>
-                                </div>
-                            ))}
-                            {folder.files?.map((file: File, index) => (
-                                <div className={`lg:w-[24rem] ${file.active && 'bg-stone-300 rounded'}`} key={file.id}>
-                                    <button 
-                                        className={`lg:w-[24rem] flex flex-nowrap gap-2 text-start hover:underline text-wrap`}
-                                        style={{
-                                            paddingLeft: `${depth + 1}rem`,
-                                            color: `${file.active ? 'rgb(221, 74, 104)' : 'rgb(102, 153, 0)'}`
-                                        }}
-                                        onClick={() => setNewActiveFile(file)}
-                                    >
-                                        <FaFileCode
-                                            className='my-auto'
-                                        />
-                                        {file.name}
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
+                onClick={() => setOpen(!open)}
+              >
+                {open ? (
+                  <FaFolderOpen className="my-auto" />
+                ) : (
+                  <FaFolder className="my-auto" />
+                )}
+                {folder.name}
+              </button>
+              <div
+                className={`${
+                  open ? "block" : "hidden"
+                } transition-all duration-1000 ease-in-out`}
+              >
+                {folder.folder?.map((subFolder, index) => (
+                  <div
+                    className={`lg:w-[24rem] flex flex-nowrap gap-2`}
+                    key={subFolder.name}
+                  >
+                    <div>
+                      <FileTree folder={subFolder} depth={depth + 1} />
+                    </div>
+                  </div>
+                ))}
+                {folder.files?.map((file: File, index) => (
+                  <div
+                    className={`lg:w-[24rem] ${
+                      file.active && "bg-stone-300 rounded"
+                    }`}
+                    key={file.id}
+                  >
+                    <button
+                      className={`lg:w-[24rem] flex flex-nowrap gap-2 text-start hover:underline text-wrap`}
+                      style={{
+                        paddingLeft: `${depth + 1}rem`,
+                        color: `${
+                          file.active ? "rgb(221, 74, 104)" : "rgb(102, 153, 0)"
+                        }`,
+                      }}
+                      onClick={() => setNewActiveFile(file)}
+                    >
+                      <FaFileCode className="my-auto" />
+                      {file.name}
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </li>
+          )}
+        </ul>
+      </div>
     );
 };
 

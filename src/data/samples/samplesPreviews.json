@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Worcl",
+    "image": {
+      "src": "/worcl-icon.svg",
+      "alt": "Worcl - How fast can you guess the word?",
+      "width": 150,
+      "height": 150
+    },
+    "path": "/samples/",
+    "slug": "worcl",
+    "headerJsonName": "worcl"
+  },
+  {
+    "title": "Cinemoji",
+    "image": {
+      "src": "/cinemoji-icon.svg",
+      "alt": "Cinemoji - Can you guess the movie from just a few emojis?",
+      "width": 150,
+      "height": 150
+    },
+    "path": "/samples/",
+    "slug": "cinemoji",
+    "headerJsonName": "cinemoji"
+  },
+  {
+    "title": "What I've Been Watching",
+    "image": {
+      "src": "/reid-mosieur-icon.svg",
+      "alt": "My taste in movies",
+      "width": 150,
+      "height": 150
+    },
+    "path": "/samples/",
+    "slug": "movies",
+    "headerJsonName": "myMovies"
+  },
+  {
+    "title": "What I've Been Listening To",
+    "image": {
+      "src": "/reid-mosieur-icon.svg",
+      "alt": "My taste in music",
+      "width": 150,
+      "height": 150
+    },
+    "path": "/samples/",
+    "slug": "music",
+    "headerJsonName": "mySpotify"
+  }
+]

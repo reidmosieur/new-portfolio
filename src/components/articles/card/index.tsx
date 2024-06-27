@@ -3,7 +3,7 @@ import { ArticleImage } from "../types/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-interface ArticleCardProps {
+export interface ArticleCardProps {
   title: string;
   image: ArticleImage;
   path: string;
@@ -28,6 +28,7 @@ const ArticleCard = ({ title, image, path, slug }: ArticleCardProps) => {
             alt={image.alt}
             width={image.width}
             height={image.height}
+            title={image.alt}
           />
           <h2 className="px-4 py-1 sm:text-lg lg:text-xl font-bold bg-stone-900 rounded-b-md">
             {title}
