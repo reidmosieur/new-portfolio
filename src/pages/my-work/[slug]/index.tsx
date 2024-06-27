@@ -34,7 +34,6 @@ const ArticlePage = ({ articlePreviews, articleContent }: WorkArticlePage) => {
 export async function getServerSideProps({ params }: any) {
     const slug = params.slug;
 
-    // Fetch article data here based on the slug
     const articlePreviews = (await import('@/data/myWork/myWorkPreviews.json')).default;
     const articleContent = (await import(`@/data/myWork/articles/${slug}.json`)).default;
 

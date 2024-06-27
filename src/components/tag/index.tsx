@@ -11,7 +11,6 @@ const Tag = ({
 }: TagProps) => {
     const baseClasses = 'px-2 py-1 flex flex-nowrap gap-2 rounded-md text-sm font-bold';
 
-    // Define tag type specific classes
     let tagTypeClasses = {
         primary: "border-teal-600 bg-teal-600 hover:bg-teal-700 text-white",
         secondary: "border-gray-400 bg-gray-400 hover:bg-gray-500 text-white",

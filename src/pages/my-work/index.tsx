@@ -21,14 +21,14 @@ const Page = ({ articlePreviews }: MyWorkProps) => {
 };
 
 export async function getServerSideProps() {
-    // Fetch articles data here
-    const articlePreviews = (await import('@/data/myWork/myWorkPreviews.json')).default;
+  const articlePreviews = (await import("@/data/myWork/myWorkPreviews.json"))
+    .default;
 
-    return {
-        props: {
-            articlePreviews,
-        },
-    };
+  return {
+    props: {
+      articlePreviews,
+    },
+  };
 }
 
 export default Page;

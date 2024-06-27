@@ -36,7 +36,6 @@ const Pagination = () => {
     const resultsPerPage = 20;
     const totalResults = ratedMovies?.total_results || 0;
 
-    // Calculate the start and end of the range
     const startRange = (currentPagination.currentPage - 1) * resultsPerPage + 1;
     const endRange = Math.min(currentPagination.currentPage * resultsPerPage, totalResults);
 

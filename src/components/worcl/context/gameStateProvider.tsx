@@ -7,7 +7,6 @@ interface GameStateProviderProps {
 }
 
 const GameStateProvider: React.FC<GameStateProviderProps> = ({ children }) => {
-  // Initialize state variables
   const [wordLength, setWordLength] = useState<number>(5);
   const [answer, setAnswer] = useState<SingleCharacter[]>([]);
   const [guesses, setGuesses] = useState<Guess[]>([]);
@@ -22,7 +21,6 @@ const GameStateProvider: React.FC<GameStateProviderProps> = ({ children }) => {
   const [displayResults, setDisplayResults] = useState<boolean>(false);
   const [history, setHistory] = useState<WordleHistory[] | undefined>([]);
 
-  // Define the value that will be passed to the context consumers
   const value = {
     wordLength,
     setWordLength,
@@ -40,7 +38,6 @@ const GameStateProvider: React.FC<GameStateProviderProps> = ({ children }) => {
     setHistory,
   };
 
-  // Provide the context value to the children
   return (
     <GameStateContext.Provider value={value}>
       {children}
