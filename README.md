@@ -17,7 +17,7 @@ I currently work for [Warehouse Wireless](https://www.warehousewireless.com, "A 
 - Artificial intelligence to moderate uploaded content
 - Programmatic SEO marketing using Python
 
-  [SearchAbilityScore](https://www.searchabilityscore.com, "Take your hiring to the next level"): A simple CRUD application that simplifies hiring processes. Key features include:
+[SearchAbilityScore](https://www.searchabilityscore.com, "Take your hiring to the next level"): A simple CRUD application that simplifies hiring processes. Key features include:
 
 - Full stack application management
 - Database operations, user authentication, and limited unauthenticated user access
