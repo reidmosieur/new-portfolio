@@ -124,10 +124,12 @@ body::-webkit-scrollbar-thumb {
 
 .markdown .ul-style {
   margin: 1rem 0 0 1rem;
+  list-style-type: circle;
 }
 
 .markdown .ol-style {
   margin: 1rem 0 0 1rem;
+  list-style-type: upper-roman;
 }
 
 .markdown .li-style {
