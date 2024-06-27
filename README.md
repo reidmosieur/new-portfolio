@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi, I'm Reid
 
-## Getting Started
+I'm a technological mercenary (full stack developer for hire), seeker of truth, and pursuer of true autonomy.
 
-First, run the development server:
+My goal is to be good at what I do. How do I define that? Simple: I don't want to just bring high quality code to any project I work on but to do so elegantly and efficiently.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I believe developers should prioritize the needs of the business over the needs of the project, meaning doing what it takes to increase conversions, user retention, and reduce the cost of development without sacrificing usability, security, or performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I currently work for [Warehouse Wireless](https://www.warehousewireless.com, "A simple HTML landing page I built for Warehouse Wireless").
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Projects
+[HelloAsync](https://www.helloasync.com, "Leveling up async for teams of all types"): Built with Next.js and MongoDB, this project takes async beyond just meetings. Key features include:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Various types of authentication
+- Embedded security
+- Shared access permissions
+- Artificial intelligence to moderate uploaded content
+- Programmatic SEO marketing using Python
 
-## Learn More
+  [SearchAbilityScore](https://www.searchabilityscore.com, "Take your hiring to the next level"): A simple CRUD application that simplifies hiring processes. Key features include:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Full stack application management
+- Database operations, user authentication, and limited unauthenticated user access
+- AI scoring of participant results
+- Custom Stripe integration for purchasing tokens
