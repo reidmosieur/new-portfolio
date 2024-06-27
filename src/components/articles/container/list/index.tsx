@@ -8,21 +8,25 @@ const ArticleListContainer = () => {
     } = useArticlesContext();
 
     return (
-        <ul className={`max-w-xs md:container h-fit mx-auto ${article ? 'columns-1 space-y-4' : 'px-2 flex flex-wrap justify-center gap-8'}`} >
-            {articlePreviews.map((articlePreview) => (
-                <li
-                    key={articlePreview.title}
-                >
-                    <ArticleCard
-                        title={articlePreview.title}
-                        image={articlePreview.image}
-                        path={articlePreview.path}
-                        slug={articlePreview.slug}
-                    />
-                </li>
-            ))}
-        </ul>
-    )
+      <ul
+        className={`max-w-xs md:container h-fit mx-auto ${
+          article
+            ? "columns-1 space-y-4 sticky top-16"
+            : "px-2 flex flex-wrap justify-center gap-8"
+        }`}
+      >
+        {articlePreviews.map((articlePreview) => (
+          <li key={articlePreview.title}>
+            <ArticleCard
+              title={articlePreview.title}
+              image={articlePreview.image}
+              path={articlePreview.path}
+              slug={articlePreview.slug}
+            />
+          </li>
+        ))}
+      </ul>
+    );
 }
 
 export default ArticleListContainer;

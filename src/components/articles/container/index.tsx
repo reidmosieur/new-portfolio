@@ -8,11 +8,11 @@ const ArticlesContainer = () => {
     } = useArticlesContext();
 
     return (
-        <div className="max-w-xs sm:container mx-auto flex flex-col-reverse xl:flex-row gap-24 justify-center" >
-            <ArticleListContainer />
-            {article && <ArticleContainer />}
-        </div>
-    )
+      <div className="relative max-w-xs sm:container mx-auto flex flex-col-reverse xl:flex-row gap-24 justify-center">
+        <ArticleListContainer />
+        {article && <ArticleContainer />}
+      </div>
+    );
 }
 
 export default ArticlesContainer;
