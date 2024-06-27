@@ -1,0 +1,3 @@
+# To Dos:
+- Refactor code samples and articles to be cleaner. There's a lot of duplication and weird, fuzzy logic happening since I didn't plan on having blog style code samples from the start so they need some work. Eventually, it would be ideal to have articles be much more abstracted to work for both traditional articles and the code samples.
+- [Refactor Worcl](https://www.reidmosieur.dev/samples/worcl)
